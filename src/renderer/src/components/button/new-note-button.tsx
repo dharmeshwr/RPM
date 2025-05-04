@@ -6,12 +6,12 @@ import { createEmptyNoteAtom } from "@renderer/store";
 export const NewNoteButton = (props: ActionButtonType) => {
   const createEmptyNode = useSetAtom(createEmptyNoteAtom)
 
-  const handleCreation = () => {
-    createEmptyNode()
+  const handleCreation = async () => {
+    await createEmptyNode()
   }
 
   return (
-    <ActionButton onClick={handleCreation} {...props}>
+    <ActionButton onClick={handleCreation} className="outline-none" {...props}>
       <BiEdit className="size-4 text-zinc-300" />
     </ActionButton>
   )
