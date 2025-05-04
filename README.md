@@ -1,34 +1,24 @@
-# rpm
+###RPM
+A simple note taking app build on electron.js and react. It stores all the notes locally
 
-An Electron application with React and TypeScript
-
-## Recommended IDE Setup
-
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-
-## Project Setup
-
-### Install
-
-```bash
-$ pnpm install
+This will give you the build for macos in the dist folder
+```
+pnpm build:mac
 ```
 
-### Development
-
-```bash
-$ pnpm dev
+For windows
+```
+pnpm build:win
 ```
 
-### Build
 
-```bash
-# For windows
-$ pnpm build:win
-
-# For macOS
-$ pnpm build:mac
-
-# For Linux
-$ pnpm build:linux
+For linux
 ```
+pnpm build:linux
+```
+
+To start the dev server
+```
+pnpm dev
+```
+
