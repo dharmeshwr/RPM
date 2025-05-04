@@ -12,6 +12,7 @@
       "electron-vite/node"
     ],
     "baseUrl": ".",
+    "moduleResolution": "bundler",
     "paths": {
       "@/*": [
         "src/main/*"

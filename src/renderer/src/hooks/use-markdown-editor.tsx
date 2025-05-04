@@ -34,5 +34,5 @@ export const useMarkdownEditor = () => {
     }
   }
 
-  return { editorRef, handleAutoSaving, selectedNote }
+  return { editorRef, handleAutoSaving, selectedNote, handleBlur }
 }
