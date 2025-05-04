@@ -10,7 +10,7 @@ export type NotePreviewListProps = ComponentProps<'div'> & {
 export const NotePreviewList = ({ className, onSelect, ...rest }: NotePreviewListProps) => {
   const { notes, selectedNoteIndex, handleNoteSelect } = useNotesList({ onSelect })
 
-  if (notes.length === 0) {
+  if (notes?.length === 0) {
     return (
       <div className={cn('text-center pt-3', className)} {...rest}>
         <span>No Notes yet !</span>
@@ -21,7 +21,7 @@ export const NotePreviewList = ({ className, onSelect, ...rest }: NotePreviewLis
 
   return (
     <div className={className} {...rest}>
-      {notes.map((note, i) => (
+      {notes?.map((note, i) => (
         <NotePreview
           key={i}
           isActive={selectedNoteIndex == i}
